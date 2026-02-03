@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Hebdon</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #333;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michael Hebdon</title>
+  <style>
+    /* reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        {
-  margin: 0;
-  padding: 0;
-}
+    body {
+      display: flex;
+      flex-direction: column;       /* stack elements vertically */
+      justify-content: flex-start;  /* start at top */
+      align-items: stretch;         /* allow full-width children */
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
 
-h2, p {
-  margin: 10px;
-}
+    /* Navigation / menu */
+    nav { background: #333; position: sticky; top: 0; z-index: 10; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 8px; padding: 8px; }
+    nav a { color: #fff; text-decoration: none; padding: 10px 16px; display: block; border-radius: 4px; }
+    nav a:hover, nav a:focus { background: #444; }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+    /* Content */
+    .page-content { max-width: 900px; margin: 16px auto; padding: 0 16px; }
+    h1 { font-size: 3rem; color: #333; margin: 16px 0; text-align: center; }
+    h2, p { margin: 10px 0; }
+    img { max-width: 100%; height: auto; display: block; margin: 12px auto; }
 
-ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #111111;
-}
-    </style>
-
-
+    @media (max-width: 520px) { nav ul { flex-wrap: wrap; } }
+  </style>
 </head>
 <body>
+<nav>
+  <ul>
+    <li><a href="#index">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+<div class="page-content"></div>
 
-</style>
-</head>
-<body>
+<h1>My name is: Michael Hebdon</h1>
+<h2>Lab 2</h2>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<h3>01 Folder Screenshot </h3>
+<p>I used the snipping tool to create a screenshot of the ArchOSC Assignment folder I have created, showing its correct placement in my user workspace folder.</p>
+<img src="Pictures\01 Folder Screenshot.png" alt="01 Folder Screenshot">
+
+<h3>02 Git Init</h3>
+<p>I used the ‘git init’ command in the command line to create a new git repository for my ArchOSC Assignment folder. </p>
+<img src="Pictures\02 Git Init.png" alt="02 Git Init">
+
+<h3>03 GitHub New Repository </h3>
+<p>I used my GitHub account to create a new online repository named ARCHOSC-Assignment-MichaelHebdon , with the appropriate settings as instructed. </p>
+<img src="Pictures\03 GitHub New Repository.png" alt="03 GitHub New Repository">
+
+<h3>04 Git Link Local Repository </h3>
+<p>I used the command line to link my local repository to the online repository I created on GitHub. I did this by using the command ‘git remote add origin’ and using the URL of my online repository to link them, and then the command ‘git pull origin main’ to pull the programs from the online repository into the local repository.</p> 
+<img src="Pictures\04 Git Link Local Repository.png" alt="04 Git Link Local Repository">
+
+<h3>05 HTML File Created </h3>
+<p>I opened visual studio code and created a new text file to insert HTML code and save the document as index.html in my ArchOSC Assignment folder. I then opened the file in my browser to view it. </p>
+<img src="Pictures\05 HTML File Created.png" alt="05 HTML File Created">
+
+<h3>06 Git Commit </h3>
+<p>I used ‘git status’, ‘git add’ , and ‘git commit’ commands in the terminal to commit my Pictures folder, Lab 2 word document, and HTML file to the local repository.</p>
+<img src="Pictures\06 Git Commit.png" alt="06 Git Commit">
+
+<h3>07 Pushed to Online Repository </h3>
+<p>I used commands ‘git branch’ and ‘git push’ to successfully push the committed files from the local repository to the online repository in GitHub.</p>
+<img src="Pictures\07 Pushed to Online Repository.png" alt="07 Pushed to Online Repository">
+
+<h3>08 Website Updates</h3>
+<p>I edited the title of the website to ‘Michael Hebdon’ as well as updating the text in the body to say ‘My Name is: Michael Hebdon’. I also added a horizontal navigation bar. </p>
+<img src="Pictures\08 Website Updates.png" alt="08 Website Updates">
+
+<h3>09 Push Website Changes and Screenshots</h3>
+<p>I used the commands ‘git status’, ‘git commit’, and ‘git add’ in the terminal to push the changes I’d made to the website and add the new screenshots and document updates. </p>
+<img src="Pictures\09 Push Website Changes and Screenshots.png" alt="09 Push Website Changes and Screenshots">
+
+<h3>10 Git Pages</h3>
+<p>I used the ‘Build and Deployment’ section of GitHub pages to push my website to GitHub pages, making it accessible from multiple devices. </p>
+<img src="Pictures\10 Git Pages.png" alt="10 Git Pages">
+
+</body>
+</html>
 
 
 
-    <h1>My name is: Michael Hebdon</h1>
+
+
+
+
+
+
+
+
+
+
+ 
+
+08 Website Changes 
+I edited the title of the website to ‘Michael Hebdon’ as well as updating the text in the body to say ‘My Name is: Michael Hebdon’. I also added a horizontal navigation bar. 
+09 Push Website Changes and Screenshots
+I used the commands ‘git status’, ‘git commit’, and ‘git add’ in the terminal to push the changes I’d made to the website and add the new screenshots and document updates. 
+10 Git Pages
+I used the ‘Build and Deployment’ section of GitHub pages to push my website to GitHub pages, making it accessible from multiple devices. 
+
+
+    <p> </p>
 </body>
 </html>
